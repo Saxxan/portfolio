@@ -8,6 +8,14 @@ import Contact from './pages/Contact/Contact';
 import DesignProject from './pages/DesignProject/DesignProject';
 import DevelopProject from './pages/DevelopProject/DevelopProject';
 
+// const location = useLocation();
+
+// const isWhite = [
+//   'home',
+//   'designProjects',
+//   'devProjects'
+// ].includes(location.pathname)
+
 function App() {
   return (
     <div className="App">
