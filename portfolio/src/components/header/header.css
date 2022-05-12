@@ -1,9 +1,12 @@
 .header {
     width: 90vw;
     padding: 10px;
-    margin: 5px auto;
+    margin: 5px 0;
+    position: absolute;
+    left: calc(50% - 45vw);
+    top: 0;
+    z-index: 1;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
