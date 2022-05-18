@@ -1,6 +1,9 @@
 .sectionTitle {
     width: 90vw;
-    margin: 40px auto 10px auto;
+    margin: 12% auto 10px auto;
     padding: 10px;
     text-align: left;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 500;
 }
