@@ -1,3 +1,19 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import './aboutMe.css';
+
 export default function AboutMe() {
-    return <h1>AboutMe page</h1>
+    return <article className='about'>
+        <Swiper slidesPerView={1}>
+            <SwiperSlide className='aboutSlide'>
+                <h1>Home</h1>
+            </SwiperSlide>
+            <SwiperSlide className='aboutSlide'>
+                <h1>About</h1>
+            </SwiperSlide>
+            <SwiperSlide className='aboutSlide'>
+                <h1>Skills</h1>
+            </SwiperSlide>
+        </Swiper>
+    </article>
 }
