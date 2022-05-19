@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import CTA from "../CTA/CTA";
@@ -9,16 +10,15 @@ export default function Header() {
 
     const location = useLocation();
 
-    let isWhite;
+    const [isWhite, toggleToWhite] = useState(false);
 
-    // Debería funcionar pero no
-    // = (['design', 'contact'].includes(location.pathname)) ? true : false;
+    // let isWhite;
 
-    if(location.pathname.includes('design')||location.pathname.includes('contact')){
-        isWhite = true;
-    } else {
-        isWhite = false;
-    }
+    // if(location.pathname.includes('design')||location.pathname.includes('contact')){
+    //     isWhite = true;
+    // } else {
+    //     isWhite = false;
+    // }
 
     return (
         <header className="header">
