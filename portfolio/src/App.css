@@ -8,6 +8,13 @@
   /* Fonts */
   --font-title: 'Exo', sans-serif;
   --font-text: 'Montserrat', sans-serif;
+
+  /* Colors */
+  --bg-dark-1: linear-gradient(90deg, #111111 -22.34%, #2F2F2F 100%);
+  --bg-dark-2: linear-gradient(270deg, #111111 -12.81%, #2F2F2F 103.91%);
+  --bg-ligth: #F6F6F6;
+  --font-white: white;
+  --font-black: black;
 }
 
 .App {

@@ -5,7 +5,7 @@ export default function NavMenu() {
     const menuOpts = [
         { name: "About me", path: "/"},
         { name: "Design portfolio", path: "/design-projects"},
-        { name: "Develop portfolio", path: "/develop-projects"},
+        { name: "Developer portfolio", path: "/develop-projects"},
         { name: "Contact", path: "/contact"}
     ];
 
