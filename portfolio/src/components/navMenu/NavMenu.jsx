@@ -1,11 +1,17 @@
-import NavLink from "../navLink/NavLink";
+import NavLink from "./navLink/NavLink";
 import "./navMenu.css";
 
 export default function NavMenu() {
-    return <nav className="navMenu">
-        <NavLink opt="About me"></NavLink>
-        <NavLink opt="Design portfolio"></NavLink>
-        <NavLink opt="Developer portfolio"></NavLink>
-        <NavLink opt="Contact"></NavLink>
-    </nav>
+    const menuOpts = [
+        { name: "About me", path: "/"},
+        { name: "Design portfolio", path: "/design-projects"},
+        { name: "Develop portfolio", path: "/develop-projects"},
+        { name: "Contact", path: "/contact"}
+    ];
+
+    return (
+        <nav className="navMenu">
+            {menuOpts.map(opt => <NavLink name={opt.name} path={opt.path}/>)}
+        </nav>
+    );
 }

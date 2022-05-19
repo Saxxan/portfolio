@@ -10,4 +10,5 @@
 .navMenu__opt__link {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }

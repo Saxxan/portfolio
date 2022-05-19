@@ -1,7 +1,8 @@
+import { useLocation } from 'react-router-dom';
+
 import CTA from "../CTA/CTA";
 import Logo from "../logo/Logo";
 import NavMenu from "../navMenu/NavMenu";
-import { useLocation } from 'react-router-dom';
 import './header.css';
 
 export default function Header() {
@@ -19,9 +20,11 @@ export default function Header() {
         isWhite = false;
     }
 
-    return <header className="header">
-        <Logo class={isWhite ? "logo fillBlack" : "logo fillWhite"}></Logo>
-        <NavMenu></NavMenu>
-        <CTA name="Contact"></CTA>
-    </header>
+    return (
+        <header className="header">
+            <Logo class={isWhite ? "logo fillBlack" : "logo fillWhite"}></Logo>
+            <NavMenu></NavMenu>
+            <CTA name="Contact"></CTA>
+        </header>
+    );
 }
