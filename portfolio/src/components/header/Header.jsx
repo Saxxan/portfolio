@@ -10,15 +10,7 @@ export default function Header() {
 
     const location = useLocation();
 
-    const [isWhite, toggleToWhite] = useState(false);
-
-    // let isWhite;
-
-    // if(location.pathname.includes('design')||location.pathname.includes('contact')){
-    //     isWhite = true;
-    // } else {
-    //     isWhite = false;
-    // }
+    let isWhite = location.pathname.includes('design')||location.pathname.includes('contact') ? true : false;
 
     return (
         <header className="header">
