@@ -1,14 +1,21 @@
 .cta {
+    display: none;
     width: fit-content;
     height: fit-content;
     padding: 6px 24px;
-    background-color: rgba(0, 102, 255);;
+    background-color: var(--primary);
     border-radius: 5px;
-    color: white;
+    color: var(--font-white);
     font-weight: 600;
     text-decoration: none;
 }
 
 .cta:hover {
-    background-color: rgba(0, 102, 255, 0.5);;
+    background-color: var(--primary-hover);
+}
+
+@media screen and (min-width: 900px) {
+    .cta {
+        display: flex;
+    }
 }

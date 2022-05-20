@@ -1,0 +1,6 @@
+[
+    { "name": "About me", "path": "/"},
+    { "name": "Design portfolio", "path": "/design-projects"},
+    { "name": "Developer portfolio", "path": "/develop-projects"},
+    { "name": "Contact", "path": "/contact"}
+]

@@ -10,10 +10,12 @@ export default function NavLink(props) {
 
     let theme = useContext(HeaderThemeContext);
 
+    let isNavMenu = props.menuClass === 'navMenu' ? true : false;
+
     return (
         <article className="navMenu__opt">
-            <Link className="navMenu__opt__link" style={{color: theme}} to={props.path}>{props.name}</Link>
-            {props.path === location.pathname && <PagePointer />}
+            <Link className="navMenu__opt__link" style={isNavMenu ? {color: theme} : {color: 'white'}} to={props.path}>{props.name}</Link>
+            {isNavMenu && (props.path === location.pathname && <PagePointer />)}
         </article>
     );
 }

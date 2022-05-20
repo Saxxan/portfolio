@@ -1,6 +1,24 @@
 .navMenu {
-    display: flex;
+    display: none;
     gap: 10px;
+    font-family: var(--font-text);
+    font-weight: 500;
+}
+
+@media screen and (min-width: 900px) {
+    .navMenu {
+        display: flex;
+    }
+}
+
+.mobileNavMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 60px;
+    font-size: 30px;
     font-family: var(--font-text);
     font-weight: 500;
 }

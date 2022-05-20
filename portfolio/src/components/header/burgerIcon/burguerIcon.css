@@ -1,0 +1,11 @@
+.burger {
+    width: 30px;
+    height: 23px;
+    fill: var(--primary);
+}
+
+@media screen and (min-width: 900px) {
+    .burger {
+        display: none;
+    }
+}
