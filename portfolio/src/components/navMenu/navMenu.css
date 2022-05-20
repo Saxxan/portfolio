@@ -1,4 +1,6 @@
 .navMenu {
     display: flex;
     gap: 10px;
+    font-family: var(--font-text);
+    font-weight: 500;
 }

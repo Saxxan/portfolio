@@ -5,9 +5,9 @@
     position: absolute;
     left: calc(50% - 45vw);
     top: 0;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background: transparent;
 }

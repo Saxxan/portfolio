@@ -1,3 +1,16 @@
+.about {
+    color: var(--font-white);
+}
+
 .aboutSlide {
     height: 100vh;
+}
+
+.about__home,
+.about__skills {
+    background: var(--bg-dark-1);
+}
+
+.about__about {
+    background: var(--bg-dark-2);
 }
