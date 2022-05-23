@@ -1,14 +1,23 @@
 import React from 'react';
-import { createRef } from 'react';
-import NavMenu from '../../../navMenu/NavMenu';
-import './modalMenu.css';
+import { NavMenuMobile } from '../../../navMenu/NavMenu';
+import styled from 'styled-components';
 
-export default function ModalMenu() {
-
-  const modal = createRef(null);
+const Modal = styled.div`
+  display: ${props => props.display};
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-dark-1);
+`
+export default function ModalMenu(props) {
   return (
-    <dialog ref={modal} className='modalMenu'>
-        <NavMenu class="mobileNavMenu"></NavMenu>
-    </dialog>
+    <Modal display={props.display}>
+      <NavMenuMobile/>
+    </Modal>
   )
 }
+
+
