@@ -1,4 +1,3 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { SectionPageLight } from '../../components/sectionPage/SectionPage';

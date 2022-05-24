@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -34,7 +34,7 @@ export default function PageHeader() {
 
     return (
         <HeaderThemeContext.Provider value={theme}>
-            <Header>
+            <Header id='header'>
                 <Logo></Logo>
                 <NavMenuDeskopt/>
                 <CTA name="Contact"></CTA>
