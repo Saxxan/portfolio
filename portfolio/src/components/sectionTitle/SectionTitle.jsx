@@ -1,5 +1,14 @@
-import './sectionTitle.css';
+import styled from "styled-components"
+
+const PageSectionTitle = styled.h2`
+    width: 90vw;
+    margin: 0 auto;
+    padding: 15vh 10px 10px 10px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+`
 
 export default function SectionTitle(props) {
-    return <h2 className="sectionTitle">{props.title}</h2>
+    return <PageSectionTitle className="sectionTitle">{props.title}</PageSectionTitle>
 }

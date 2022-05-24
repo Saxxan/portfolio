@@ -1,14 +1,29 @@
 import { createContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import styled from 'styled-components';
 
 import CTA from "../CTA/CTA";
 import Logo from "../logo/Logo";
-import NavMenu from "../navMenu/NavMenu";
-import './header.css';
+import { NavMenuDeskopt } from "../navMenu/NavMenu";
+import BurgerIcon from './burgerIcon/BurgerIcon';
 
 export const HeaderThemeContext = createContext();
 
-export default function Header() {
+const Header = styled.header`
+    width: 90vw;
+    padding: 10px;
+    margin: 5px 0;
+    position: absolute;
+    left: calc(50% - 45vw);
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+`
+
+export default function PageHeader() {
 
     const location = useLocation();
     const [theme, setTheme] = useState('white');
@@ -19,11 +34,12 @@ export default function Header() {
 
     return (
         <HeaderThemeContext.Provider value={theme}>
-            <header className="header">
+            <Header className="header">
                 <Logo></Logo>
-                <NavMenu></NavMenu>
+                <NavMenuDeskopt/>
                 <CTA name="Contact"></CTA>
-            </header>
+                <BurgerIcon/>
+            </Header>
         </HeaderThemeContext.Provider>
     );
 }

@@ -15,10 +15,16 @@
   --bg-ligth: #F6F6F6;
   --font-white: white;
   --font-black: black;
+  --primary: rgba(0, 102, 255);
+  --primary-hover: rgba(0, 102, 255, 0.5);
 }
 
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {

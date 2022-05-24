@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/header/Header';
+import PageHeader from './components/header/Header';
 import AboutMe from './pages/AboutMe/AboutMe';
 import DesignProjects from './pages/DesignProjects/DesignProjects';
 import DevelopProjects from './pages/DevelopProjects/DevelopProjects';
@@ -11,7 +11,7 @@ import DevelopProject from './pages/DevelopProject/DevelopProject';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <PageHeader></PageHeader>
       <Routes>
         <Route path="/" element={<AboutMe />} />
         <Route path="/design-projects" element={<DesignProjects />} />
