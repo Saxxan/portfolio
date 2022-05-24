@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavMenuMobile } from '../../../navMenu/NavMenu';
 import styled from 'styled-components';
 
 const Modal = styled.div`
-  display: ${props => props.display};
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -13,8 +13,15 @@ const Modal = styled.div`
   background: var(--bg-dark-1);
 `
 export default function ModalMenu(props) {
+
+  // const [isVisible, toggleVisibility] = useState(false);
+
+  // function toggleModalState() {
+  //   toggleVisibility(!isVisible);
+  // }
+
   return (
-    <Modal display={props.display}>
+    <Modal>
       <NavMenuMobile/>
     </Modal>
   )

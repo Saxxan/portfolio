@@ -1,10 +1,10 @@
+import { SectionPageLight } from "../../components/sectionPage/SectionPage";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
-import './Contact.css';
 
 export default function Contact() {
     return (
-        <article className="contact">
+        <SectionPageLight>
             <SectionTitle title='Contact'></SectionTitle>
-        </article>
+        </SectionPageLight>
     );
 }

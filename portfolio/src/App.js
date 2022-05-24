@@ -7,11 +7,13 @@ import DevelopProjects from './pages/DevelopProjects/DevelopProjects';
 import Contact from './pages/Contact/Contact';
 import DesignProject from './pages/DesignProject/DesignProject';
 import DevelopProject from './pages/DevelopProject/DevelopProject';
+import ModalMenu from './components/header/burgerIcon/mobileModalMenu/ModalMenu';
 
 function App() {
   return (
     <div className="App">
-      <PageHeader></PageHeader>
+      <ModalMenu/>
+      <PageHeader/>
       <Routes>
         <Route path="/" element={<AboutMe />} />
         <Route path="/design-projects" element={<DesignProjects />} />

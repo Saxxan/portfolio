@@ -1,10 +1,10 @@
+import { SectionPageLight } from "../../components/sectionPage/SectionPage";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
-import './DesignProject.css';
 
 export default function DesignProject() {
     return (
-        <article className="design--project">
+        <SectionPageLight>
             <SectionTitle title='Design project'></SectionTitle>
-        </article>
+        </SectionPageLight>
     );
 }

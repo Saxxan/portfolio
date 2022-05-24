@@ -1,9 +1,10 @@
+import { SectionPageDark } from "../../components/sectionPage/SectionPage";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 
 export default function DevelopProject() {
     return (
-        <article className="develop--project">
+        <SectionPageDark>
             <SectionTitle title='Develop project'></SectionTitle>
-        </article>
+        </SectionPageDark>
     );
 }
