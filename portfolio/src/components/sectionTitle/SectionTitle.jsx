@@ -4,11 +4,14 @@ const PageSectionTitle = styled.h2`
     width: 90vw;
     margin: 0 auto;
     padding: 15vh 10px 10px 10px;
-    text-align: left;
-    font-size: 2rem;
+    font-size: 23px;
     font-weight: 500;
+    @media (min-width: 900px){
+        font-size: 30px;
+        padding: 17vh 10px 10px 10px;
+    }
 `
 
 export default function SectionTitle(props) {
-    return <PageSectionTitle className="sectionTitle">{props.title}</PageSectionTitle>
+    return <PageSectionTitle>{props.title}</PageSectionTitle>
 }
