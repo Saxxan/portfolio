@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { SectionPageDark } from '../../components/sectionPage/SectionPage';
 import 'swiper/css';
 import './aboutMe.css';
 
 export default function AboutMe() {
     return (
-        <article className='about'>
+        <SectionPageDark>
             <Swiper slidesPerView={1}>
                 <SwiperSlide className='aboutSlide about__home'>
                     <h1>Home</h1>
@@ -16,6 +17,6 @@ export default function AboutMe() {
                     <h1>Skills</h1>
                 </SwiperSlide>
             </Swiper>
-        </article>
+        </SectionPageDark>
     );
 }

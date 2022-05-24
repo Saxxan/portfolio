@@ -5,12 +5,14 @@ const Button = styled.button`
     display: none;
     width: fit-content;
     height: fit-content;
-    padding: 6px 24px;
+    padding: 8px 30px;
     background-color: var(--primary);
     border: none;
     border-radius: 5px;
     color: var(--font-white);
     font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
     &:hover {
         background-color: var(--primary-hover);
     }
