@@ -1,4 +1,3 @@
-import 'swiper/css';
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { SectionPageLight } from '../../components/sectionPage/SectionPage';
 import ProjectsSwiper from '../../components/ProjectsSwiper/ProjectsSwiper';
