@@ -1,11 +1,11 @@
-import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import './DevelopProjects.css';
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
+import { SectionPageDark } from '../../components/sectionPage/SectionPage';
 
 export default function DevelopProjects() {
     return (
-        <article className="develop">
+        <SectionPageDark>
             <SectionTitle title='Development projects'></SectionTitle>
             <Swiper>
                 <SwiperSlide>
@@ -18,6 +18,6 @@ export default function DevelopProjects() {
                     <h3>project 3</h3>
                 </SwiperSlide>
             </Swiper>
-        </article>
+        </SectionPageDark>
     );
 }

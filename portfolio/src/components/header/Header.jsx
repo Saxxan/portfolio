@@ -23,6 +23,7 @@ const Header = styled.header`
     background: transparent;
 `
 
+
 export default function PageHeader() {
 
     const location = useLocation();
@@ -34,7 +35,7 @@ export default function PageHeader() {
 
     return (
         <HeaderThemeContext.Provider value={theme}>
-            <Header className="header">
+            <Header>
                 <Logo></Logo>
                 <NavMenuDeskopt/>
                 <CTA name="Contact"></CTA>

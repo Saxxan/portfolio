@@ -11,7 +11,7 @@ import DevelopProject from './pages/DevelopProject/DevelopProject';
 function App() {
   return (
     <div className="App">
-      <PageHeader></PageHeader>
+      <PageHeader/>
       <Routes>
         <Route path="/" element={<AboutMe />} />
         <Route path="/design-projects" element={<DesignProjects />} />
