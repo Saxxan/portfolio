@@ -17,6 +17,7 @@
   --font-black: black;
   --primary: rgba(0, 102, 255);
   --primary-hover: rgba(0, 102, 255, 0.5);
+  --border-gradient: linear-gradient(45deg, rgba(0, 102, 255), rgba(0, 102, 255, .1));
 }
 
 body {

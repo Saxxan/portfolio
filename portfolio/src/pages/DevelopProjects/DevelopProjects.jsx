@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import { SectionPageDark } from '../../components/sectionPage/SectionPage';
+import DevProjectCard from './components/DevProjectCard';
 
 export default function DevelopProjects() {
     return (
@@ -9,13 +10,13 @@ export default function DevelopProjects() {
             <SectionTitle title='Development projects'></SectionTitle>
             <Swiper>
                 <SwiperSlide>
-                    <h3>project 1</h3>
+                    <DevProjectCard/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <h3>project 2</h3>
+                    <DevProjectCard/>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <h3>project 3</h3>
+                    <DevProjectCard/>
                 </SwiperSlide>
             </Swiper>
         </SectionPageDark>
