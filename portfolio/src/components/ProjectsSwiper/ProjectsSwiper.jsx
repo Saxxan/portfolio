@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
+import DevProjects from '../json/devprojects.json';
+import DesignProjects from '../json/designprojects.json';
+import { useState } from "react";
+import DevProjectCard from "../../pages/DevelopProjects/components/DevProjectCard";
 
 const SwiperForProjects = styled(Swiper)`
     width: 85%;
@@ -12,13 +16,27 @@ const SwiperForProjects = styled(Swiper)`
     }
 `
 
-export default function ProjectsSwiper () {
+export default function ProjectsSwiper (props) {
+
+    function printProjects() {
+        if(props.category === "develop"){
+            return DevProjects.map(p => 
+            <SwiperSlide>
+                <DevProjectCard title={p.title} subtitle={p.subtitle}/>
+            </SwiperSlide>);
+        } else {
+            console.log('error');
+            // return DevProjects.map((p) => 
+            // <SwiperSlide>
+            //     <DevProjectCard title={p.title} subtitle={p.subtitle}/>
+            // </SwiperSlide>);
+        }
+    }
+   
+
     return (
         <SwiperForProjects>
-            <SwiperSlide></SwiperSlide>
-            <SwiperSlide></SwiperSlide>
-            <SwiperSlide></SwiperSlide>
-            <SwiperSlide></SwiperSlide>
+            {printProjects()}
         </SwiperForProjects>
     )
 }
