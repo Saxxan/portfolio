@@ -2,17 +2,16 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import DevProjects from '../json/devprojects.json';
-import DesignProjects from '../json/designprojects.json';
-import { useState } from "react";
 import DevProjectCard from "../../pages/DevelopProjects/components/DevProjectCard";
 
 const SwiperForProjects = styled(Swiper)`
     width: 85%;
     height: 350px;
-    margin: 30px 0;
+    margin: 35px 0;
     transform: translateX(35px);
     @media (min-width: 900px) {
-        transform: translateX(80px);
+        height: 450px;
+        transform: translateX(200px);
     }
 `
 

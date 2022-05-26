@@ -4,7 +4,12 @@ import styled from 'styled-components';
 const CardArrow = styled.svg`
     width: 84px;
     height: 84px;
-    align-self: flex-end;
+    align-self: center;
+    margin-right: -70px;
+    @media (min-width: 900px) {
+        width: 130px;
+        height: 130px;
+    }
 `
 
 export default function Arrow() {
