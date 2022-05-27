@@ -21,12 +21,12 @@ const CodeProjectCardWrapper = styled.article`
     }
 `
 
-export default function DevProjectCard(props) {
+export default function DevProjectCard() {
   return (
     <CodeProjectCardWrapper>
       <Arrow/>
-      <ProjectCardTitle title={props.title}/>
-      <ProjectCardSubtitle subtitle={props.subtitle}/>
+      <ProjectCardTitle/>
+      <ProjectCardSubtitle/>
     </CodeProjectCardWrapper>
   )
 }

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import SwiperSlideContext from '../ProjectsSwiper/ProjectsSwiper';
 
 const CardTitle = styled.h3`
     font-size: 17px;
@@ -12,8 +13,9 @@ const CardTitle = styled.h3`
     }
 `
 
-export default function ProjectCardTitle(props) {
+export default function ProjectCardTitle() {
+  let project = useContext(SwiperSlideContext);
   return (
-    <CardTitle>{props.title}</CardTitle>
+    <CardTitle>{project.title}</CardTitle>
   )
 }
