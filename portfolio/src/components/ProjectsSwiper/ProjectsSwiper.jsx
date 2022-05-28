@@ -1,36 +1,42 @@
-import React, { createContext, useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {Scrollbar} from 'swiper';
 import 'swiper/css';
+import './projectsSwiperStyles.css';
 import DevProjects from '../json/devprojects.json';
 import DevProjectCard from "../../pages/DevelopProjects/components/DevProjectCard";
 import DesignProjects from '../json/designprojects.json';
+
+// const SwiperSlideForProjects = styled(SwiperSlide)`
+//     width: 300px;
+//     height: 300px;
+//     @media (min-width: 900px) {
+//         width: 400px;
+//         height: 400px;
+//     }
+// `
 
 const SwiperForProjects = styled(Swiper)`
     width: 85%;
     height: 350px;
     margin: 35px 0;
+    padding-right: 20px;
     transform: translateX(35px);
     @media (min-width: 900px) {
         height: 450px;
-        transform: translateX(200px);
+        transform: translateX(175px);
     }
 `
 
-// const SwiperSlideContext = createContext();
-
 export default function ProjectsSwiper(props) {
-
-    // let projectsList = [];
 
     function printProjects() {
         if (props.category === "develop") {
             return DevProjects.map(p =>
-                // <SwiperSlideContext.Provider value={p}>
-                    <SwiperSlide>
-                        <DevProjectCard />
+                    <SwiperSlide style={{width: 'fit-content'}}>
+                        <DevProjectCard title={p.title} subtitle={p.subtitle}/>
                     </SwiperSlide>)
-                // </SwiperSlideContext.Provider>);
         } else {
             alert('error');
             // return DevProjects.map((p) => 
@@ -40,33 +46,9 @@ export default function ProjectsSwiper(props) {
         }
     }
 
-    // const [shouldPrint, setPrint] = useState(false);
-
-    // const getDevProjects = () => {
-    //     projectsList = DevProjects;
-    //     console.log(projectsList);
-    //     setPrint(true);
-    // }
-
-    // const getDesProjects = () => {
-    //     projectsList = DesignProjects;
-    // }
-
-    // useEffect(() => {
-    //   if(props.category === 'develop') {
-    //       getDevProjects();
-    //   } else if (props.category === 'design') {
-    //       getDesProjects();
-    //   } else {
-    //       alert('No hay categoría para el swiper');
-    //   }
-    // });
-    
-
     return (
-        <SwiperForProjects>
+        <SwiperForProjects slidesPerView={'auto'} spaceBetween={20} modules={[Scrollbar]} scrollbar={{draggable:true, dragSize:'auto'}}>
             {printProjects()}
-            {/* {shouldPrint && projectsList.map(p => <h1>{p.title}</h1>)} */}
         </SwiperForProjects>
     )
 }

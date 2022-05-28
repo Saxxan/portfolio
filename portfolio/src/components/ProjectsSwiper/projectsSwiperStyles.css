@@ -1,0 +1,50 @@
+.swiper-scrollbar {
+    border-radius: 10px;
+    position: absolute;
+    -ms-touch-action: none;
+    background: var(--font-grey);
+    overflow: hidden;
+}
+
+.swiper-horizontal>.swiper-scrollbar {
+    position: absolute;
+    bottom: 0;
+    z-index: 50;
+    height: 5px;
+    width: 200px;
+}
+
+.swiper-scrollbar-drag {
+    height: 100%;
+    width: 50px !important;
+    position: relative;
+    background: var(--primary);
+    border: .5 solid transparent;
+    border-radius: 10px;
+}
+
+@media (min-width: 900px) {
+    .swiper-horizontal>.swiper-scrollbar {
+        width: 400px;
+    }
+    .swiper-scrollbar-drag{
+        width: 100px !important;
+    }
+}
+
+@media (min-width: 1250px) {
+    .swiper-horizontal>.swiper-scrollbar {
+        width: 500px;
+    }
+    .swiper-scrollbar-drag{
+        width: 60% !important;
+    }
+}
+
+.swiper-scrollbar-cursor-drag {
+    cursor: move
+}
+
+.swiper-scrollbar-lock {
+    display: none
+}
