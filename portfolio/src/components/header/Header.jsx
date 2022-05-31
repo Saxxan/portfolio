@@ -6,6 +6,7 @@ import CTA from "../CTA/CTA";
 import Logo from "../logo/Logo";
 import { NavMenuDeskopt } from "../navMenu/NavMenu";
 import BurgerIcon from './burgerIcon/BurgerIcon';
+import ModalMenu from './burgerIcon/mobileModalMenu/ModalMenu';
 
 export const HeaderThemeContext = createContext();
 
@@ -28,6 +29,11 @@ export default function PageHeader() {
 
     const location = useLocation();
     const [theme, setTheme] = useState('white');
+    const [isOpen, setIsOpen] = useState(false);
+
+    function toggleVisibility() {
+        setIsOpen(!isOpen);
+    }
 
     useEffect(() => {
         location.pathname.includes('design')||location.pathname.includes('contact') ? setTheme('black') : setTheme('white');
@@ -39,8 +45,9 @@ export default function PageHeader() {
                 <Logo></Logo>
                 <NavMenuDeskopt/>
                 <CTA name="Contact"></CTA>
-                <BurgerIcon/>
+                <BurgerIcon onClick={toggleVisibility}/>
             </Header>
+            {isOpen ? <ModalMenu/> : ''}
         </HeaderThemeContext.Provider>
     );
 }
