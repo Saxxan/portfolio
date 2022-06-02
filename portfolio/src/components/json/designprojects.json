@@ -1,9 +1,9 @@
 [
     {
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
+        "title":"BB8",
+        "subtitle":"Made with Figma",
         "description":"Project description",
-        "image":"Image"
+        "image":"/bb8-thumbnail.png"
     },
     {
         "title":"About me",

@@ -31,8 +31,12 @@ export default function PageHeader() {
     const [theme, setTheme] = useState('white');
     const [isOpen, setIsOpen] = useState(false);
 
-    function toggleVisibility() {
+    const toggleModalVisibility = () => {
+        console.log(isOpen);
+        debugger;
         setIsOpen(!isOpen);
+        console.log(isOpen);
+        debugger;
     }
 
     useEffect(() => {
@@ -42,12 +46,12 @@ export default function PageHeader() {
     return (
         <HeaderThemeContext.Provider value={theme}>
             <Header>
-                <Logo></Logo>
+                <Logo/>
                 <NavMenuDeskopt/>
                 <CTA name="Contact"></CTA>
-                <BurgerIcon onClick={toggleVisibility}/>
+                <BurgerIcon onClick={toggleModalVisibility}/>
             </Header>
-            {isOpen ? <ModalMenu/> : ''}
+            <ModalMenu display={isOpen ? "block" : "none"}/>
         </HeaderThemeContext.Provider>
     );
 }

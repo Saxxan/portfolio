@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavMenuMobile } from '../../../navMenu/NavMenu';
 import styled from 'styled-components';
 
 const Modal = styled.div`
+    display: ${props => props.display};
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +15,7 @@ const Modal = styled.div`
 export default function ModalMenu(props) {
 
 	return (
-        <Modal>
+        <Modal display={props.display}>
             <NavMenuMobile />
         </Modal>
 	)

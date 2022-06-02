@@ -7,6 +7,7 @@ import './projectsSwiperStyles.css';
 import DevProjects from '../json/devprojects.json';
 import DevProjectCard from "../../pages/DevelopProjects/components/DevProjectCard";
 import DesignProjects from '../json/designprojects.json';
+import DesignProjectCard from "../../pages/DesignProjects/components/DesignProjectCard";
 
 // const SwiperSlideForProjects = styled(SwiperSlide)`
 //     width: 300px;
@@ -38,11 +39,10 @@ export default function ProjectsSwiper(props) {
                         <DevProjectCard title={p.title} subtitle={p.subtitle}/>
                     </SwiperSlide>)
         } else {
-            alert('error');
-            // return DevProjects.map((p) => 
-            // <SwiperSlide>
-            //     <DevProjectCard title={p.title} subtitle={p.subtitle}/>
-            // </SwiperSlide>);
+            return DesignProjects.map(p =>
+                <SwiperSlide style={{width: 'fit-content'}}>
+                    <DesignProjectCard title={p.title} subtitle={p.subtitle} image={p.image}/>
+                </SwiperSlide>)
         }
     }
 
