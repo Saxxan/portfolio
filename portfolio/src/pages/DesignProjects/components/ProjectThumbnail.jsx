@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 
-export default function ProjectThumbnail() {
-  return (
-    <div>ProjectThumbnail</div>
-  )
+const ThumbImage = styled.img`
+  margin: 0 auto;
+`
+
+export default function ProjectThumbnail(props) {
+  return <ThumbImage src={props.image}/>
 }

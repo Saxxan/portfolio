@@ -9,21 +9,13 @@ import DevProjectCard from "../../pages/DevelopProjects/components/DevProjectCar
 import DesignProjects from '../json/designprojects.json';
 import DesignProjectCard from "../../pages/DesignProjects/components/DesignProjectCard";
 
-// const SwiperSlideForProjects = styled(SwiperSlide)`
-//     width: 300px;
-//     height: 300px;
-//     @media (min-width: 900px) {
-//         width: 400px;
-//         height: 400px;
-//     }
-// `
-
 const SwiperForProjects = styled(Swiper)`
     width: 85%;
-    height: 350px;
+    height: 365px;
     margin: 35px 0;
     padding-right: 20px;
     transform: translateX(35px);
+    overflow: visible;
     @media (min-width: 900px) {
         height: 450px;
         transform: translateX(175px);

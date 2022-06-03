@@ -1,7 +1,5 @@
 .swiper-scrollbar {
     border-radius: 10px;
-    position: absolute;
-    -ms-touch-action: none;
     background: var(--font-grey);
     overflow: hidden;
 }
@@ -9,14 +7,17 @@
 .swiper-horizontal>.swiper-scrollbar {
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 50;
     height: 5px;
     width: 200px;
+    margin-left: -20px;
+    transform: translateY(50px);
 }
 
 .swiper-scrollbar-drag {
     height: 100%;
-    width: 50px !important;
+    width: 25% !important;
     position: relative;
     background: var(--primary);
     border: .5 solid transparent;
@@ -26,9 +27,10 @@
 @media (min-width: 900px) {
     .swiper-horizontal>.swiper-scrollbar {
         width: 400px;
+        margin-left: -100px;
     }
     .swiper-scrollbar-drag{
-        width: 100px !important;
+        width: 35% !important;
     }
 }
 
