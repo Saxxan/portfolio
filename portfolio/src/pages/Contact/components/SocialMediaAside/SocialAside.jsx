@@ -6,7 +6,6 @@ import SocialMediaList from './components/MediaList/SocialMediaList';
 const SocialMediaAside = styled.aside`
     width: 20%;
     height: 100%;
-    border: 1px solid red;
     padding: 10px 10px 0 10px;
     display: flex;
     flex-direction: column;

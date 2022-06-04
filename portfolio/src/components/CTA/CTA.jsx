@@ -8,11 +8,12 @@ const Button = styled.button`
     padding: 8px 30px;
     background-color: var(--primary);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--font-white);
     font-weight: 600;
     font-size: 15px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
     &:hover {
         background-color: var(--primary-hover);
     }
