@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {Scrollbar} from 'swiper';
 import 'swiper/css';
 import './projectsSwiperStyles.css';
+import { Link } from "react-router-dom";
 import DevProjects from '../json/devprojects.json';
 import DevProjectCard from "../../pages/DevelopProjects/components/DevProjectCard";
 import DesignProjects from '../json/designprojects.json';
@@ -22,18 +23,26 @@ const SwiperForProjects = styled(Swiper)`
     }
 `
 
+const LinkToProjects = styled(Link)`
+    text-decoration: none;
+`
+
 export default function ProjectsSwiper(props) {
 
     function printProjects() {
         if (props.category === "develop") {
             return DevProjects.map(p =>
-                    <SwiperSlide style={{width: 'fit-content'}}>
+                <SwiperSlide style={{width: 'fit-content'}}>
+                    <LinkToProjects style={{color:"white"}} to={`/detailed-develop-project/${p.title}`}>
                         <DevProjectCard title={p.title} subtitle={p.subtitle}/>
-                    </SwiperSlide>)
+                    </LinkToProjects>
+                </SwiperSlide>)
         } else {
             return DesignProjects.map(p =>
                 <SwiperSlide style={{width: 'fit-content'}}>
-                    <DesignProjectCard title={p.title} subtitle={p.subtitle} image={p.image}/>
+                    <LinkToProjects style={{color:"black"}} to={`/detailed-design-project/${p.title}`}>
+                        <DesignProjectCard title={p.title} subtitle={p.subtitle} image={p.image}/>
+                    </LinkToProjects>
                 </SwiperSlide>)
         }
     }
