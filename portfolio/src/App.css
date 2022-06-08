@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 :root {
   /* Fonts */
-  --font-title: 'Exo', sans-serif;
+  --font-title: 'Space Grotesk', sans-serif;
   --font-text: 'Montserrat', sans-serif;
 
   /* Colors */
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
 }
 
-p, span, input, textarea {
+p, span, input, textarea, li {
   margin: 0;
   font-family: var(--font-text);
 }

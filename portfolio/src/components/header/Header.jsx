@@ -48,7 +48,7 @@ export default function PageHeader() {
             <Header>
                 <Logo/>
                 <NavMenuDeskopt/>
-                <CTA name="Contact"></CTA>
+                <CTA display="none" name="Contact"/>
                 <BurgerIcon onClick={toggleModalVisibility}/>
             </Header>
             <ModalMenu display={isOpen ? "block" : "none"}/>

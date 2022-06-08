@@ -1,12 +1,156 @@
 .aboutSlide {
     height: 100vh;
+    padding-top: 10vh;
 }
 
 .about__home,
 .about__skills {
     background: var(--bg-dark-1);
+    display: flex;
 }
 
 .about__about {
     background: var(--bg-dark-2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__about__text {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 20px 0;
+    max-width: 700px;
+}
+
+.about__about__line {
+    width: 250px;
+}
+
+.about__home__section {
+    width: 50%;
+    height: 100%;
+    padding: 30px 10px 70px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__home__section__title {
+    font-size: 30px;
+    width: 300px;
+}
+
+.about__home__section__subtitle > h2 {
+    font-size: 23px;
+    width: 200px;
+    font-weight: 400;
+}
+
+.about__home__section__subtitle > h2:nth-child(2) {
+    padding-bottom: 30px;
+}
+
+.about__home__section > img {
+    height: 450px;
+    width: 400px;
+    margin-left: -190px;
+    z-index: -1;
+}
+
+.about__skills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__skills__block {
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about__skills__block > h3 {
+    border-bottom: 1px solid var(--font-white);
+    padding-bottom: 3px;
+}
+
+.about__skills__block > ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.about__skills__block > ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    .aboutSlide {
+        padding-top: 12vh;
+    }
+
+    .about__home__section {
+        width: 50%;
+        height: 100%;
+        padding: 30px 10px 70px 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about__home__section:nth-child(1) {
+        margin-left: 140px;
+    }
+
+
+    .about__home__section__title {
+        font-size: 70px;
+        width: 600px;
+    }
+
+    .about__home__section__subtitle > h2 {
+        font-size: 30px;
+        font-weight: 400;
+        width: fit-content;
+    }
+
+    .about__home__section > img {
+        height: 500px;
+        width: 450px;
+        margin-left: -110px;
+        z-index: -1;
+    }
+
+    .about__about__line {
+        width: 450px;
+    }
+
+    .about__about__text {
+        font-size: 20px;
+    }
+
+    .about__skills {
+        flex-direction: row;
+    }
+
+    .about__skills__block {
+        width: 300px;
+    }
+
+    .about__skills__block > h3 {
+        font-size: 25px;
+    }
+
+    .about__skills__block > ul > li {
+        font-size: 20px;
+    }
 }
