@@ -39,9 +39,10 @@ export default function AboutMe() {
                             <li>Semantic HTML</li>
                             <li>Responsive CSS</li>
                             <li>JavaScript</li>
+                            <li>React</li>
                             <li>Git</li>
                             <li>C++</li>
-                            <li>Java</li>
+                            <li>Linux</li>
                         </ul>
                     </section>
                     <section className='about__skills__block'>
