@@ -1,26 +1,34 @@
 [
     {
+        "id": "10",
         "title":"BB8",
         "subtitle":"Made with Figma",
-        "description":"Project description",
-        "image":"/bb8-thumbnail.png"
+        "brief":"Project description",
+        "image":"/bb8-thumbnail.png",
+        "application": ""
     },
     {
+        "id": "11",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description",
-        "image":"Image"
+        "brief":"Project description",
+        "image":"Image",
+        "application": "Aplicacion para x"
     },
     {
+        "id": "12",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description",
-        "image":"Image"
+        "brief":"Project description",
+        "image":"Image",
+        "application": ""
     },
     {
+        "id": "13",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description",
-        "image":"Image"
+        "brief":"Project description",
+        "image":"Image",
+        "application": "aplicación para Y"
     }
 ]
