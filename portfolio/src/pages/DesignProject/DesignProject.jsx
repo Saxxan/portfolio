@@ -1,6 +1,7 @@
 import { SectionPageLight } from "../../components/sectionPage/SectionPage";
 import DesignProjects from "../../components/json/designprojects.json";
 import { useLocation } from "react-router-dom";
+import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import ProjectContent from "../../components/projectContent/ProjectContent";
 
 export default function DesignProject() {
@@ -16,7 +17,8 @@ export default function DesignProject() {
 
     return (
         <SectionPageLight>
-            <ProjectContent p={project}/>
+            <SectionTitle title={project.title}/>
+            {project.application && <ProjectContent application={project.application}/> }
         </SectionPageLight>
     );
 }
