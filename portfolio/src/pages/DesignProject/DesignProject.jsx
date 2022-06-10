@@ -2,23 +2,30 @@ import { SectionPageLight } from "../../components/sectionPage/SectionPage";
 import DesignProjects from "../../components/json/designprojects.json";
 import { useLocation } from "react-router-dom";
 import SectionTitle from "../../components/sectionTitle/SectionTitle";
-import ProjectContent from "../../components/projectContent/ProjectContent";
+import TextBox from "../../components/projectContent/TextBox";
+import { useState, useEffect } from "react";
+import ImageProject from "../../components/projectContent/ImageProject";
 
 export default function DesignProject() {
 
     const location = useLocation();
-    let project = {};
+    let [project, setProject] = useState({});
 
-    DesignProjects.forEach((p) =>{
-        if(location.pathname.includes(p.id)){
-            project = p;
-        }
-    })
+
+    useEffect(() => {
+        DesignProjects.forEach((p) =>{
+            if(location.pathname.includes(p.id)){
+                setProject(p);
+                console.log(project);
+            }
+        });
+    }, [project, location]);
 
     return (
         <SectionPageLight>
             <SectionTitle title={project.title}/>
-            {project.application && <ProjectContent application={project.application}/> }
+            <ImageProject image={project.image}/>
+            {project.application && <TextBox text={project.application}/> }
         </SectionPageLight>
     );
 }
