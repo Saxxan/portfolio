@@ -3,23 +3,26 @@
         "id": "10",
         "title":"BB8",
         "subtitle":"Made with Figma",
-        "brief":"Project description",
+        "brief":"This is a design of BB8 made in Figma. Made by a simple sketch and creating components.",
+        "thumbnail":"/bb8-thumbnail.png",
         "image":"/bb8-thumbnail.png",
         "application": ""
     },
     {
         "id": "11",
         "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "brief":"Project description",
-        "image":"Image",
-        "application": "Aplicacion para x"
+        "subtitle":"Designed in Figma",
+        "brief":"Project for creating an About me page as personal presentation. The responsive design is made in Figma. Using autolayout and components as the customed iconography.",
+        "thumbnail":"/aboutme-thumbnail.webp",
+        "image":"/aboutme-image.webp",
+        "application": "This page is used as a personal presentation letter. To know more about me and show my skills at the very beginning."
     },
     {
         "id": "12",
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "brief":"Project description",
+        "title":"GoDog",
+        "subtitle":"Designed in Figma",
+        "brief":"",
+        "thumbnail":"Image",
         "image":"Image",
         "application": ""
     },

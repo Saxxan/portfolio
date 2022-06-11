@@ -41,7 +41,7 @@ export default function ProjectsSwiper(props) {
             return DesignProjects.map(p =>
                 <SwiperSlide style={{width: 'fit-content'}}>
                     <LinkToProjects style={{color:"black"}} to={`/detailed-design-project/${p.id}`}>
-                        <DesignProjectCard title={p.title} subtitle={p.subtitle} image={p.image}/>
+                        <DesignProjectCard title={p.title} subtitle={p.subtitle} thumbnail={p.thumbnail}/>
                     </LinkToProjects>
                 </SwiperSlide>)
         }

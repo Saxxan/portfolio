@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const PageSectionTitle = styled.h2`
     width: 90vw;
+    height: fit-content;
     margin: 0 auto;
     padding: 0 10px;
     font-size: 23px;

@@ -7,13 +7,18 @@ import ProjectThumbnail from './ProjectThumbnail';
 const DesignProjectCardWrapper = styled.article`
     width: 280px;
     height: 380px;
-    padding: 0 20px;
     border: 1px solid var(--primary);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-context: center;
-    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    &:hover div {
+      filter: grayscale(100%) blur(3px);
+    }
+    &:hover h3, &:hover p {
+      background: var(--primary);
+    }
     @media (min-width: 900px){
         width: 280px;
         height: 420px;
@@ -22,8 +27,8 @@ const DesignProjectCardWrapper = styled.article`
 
 export default function DesignProjectCard(props) {
   return (
-    <DesignProjectCardWrapper>
-        <ProjectThumbnail image={props.image}/>
+    <DesignProjectCardWrapper thumbnail={props.thumbnail}>
+        <ProjectThumbnail thumbnail={props.thumbnail}/>
         <ProjectCardTitle title={props.title}/>
         <ProjectCardSubtitle subtitle={props.subtitle}/>
     </DesignProjectCardWrapper>

@@ -15,9 +15,21 @@ const CodeProjectCardWrapper = styled.article`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    & h3, & p {
+      background: none;
+    }
+    & p {
+      margin: 0 auto 0 40px;
+      width: 200px;
+      color: var(--font-grey);
+    }
     @media (min-width: 900px){
       width: 380px;
       height: 380px;
+      & p {
+        margin: 0 auto 0 50px;
+        width: 250px;
+      }
     }
 `
 
