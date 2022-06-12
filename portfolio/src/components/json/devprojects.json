@@ -3,24 +3,24 @@
         "id": "20",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "brief":"Project brief"
     },
     {
         "id": "21",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "brief":"Project brief"
     },
     {
         "id": "22",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "brief":"Project brief"
     },
     {
         "id": "23",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "brief":"Project brief"
     }
 ]

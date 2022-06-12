@@ -3,12 +3,13 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const Tools = styled.ul`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 90vw;
-    margin: 0 auto;
+  max-width: 90vw;
+  margin: 0 auto;
+`
+
+const Tool = styled.li`
+  display: flex;
+  padding: 5px;
 `
 
 export default function ToolList(props) {
@@ -21,8 +22,11 @@ export default function ToolList(props) {
     
 
   return (
+    <>
+    <h3 style={{width: "90vw", margin:"0 auto", padding:"10px"}}>Tools</h3>
     <Tools>
-        {herramientas && herramientas.map((t) => <li>{t}</li>)}
+        {herramientas && herramientas.map((t) => <Tool>{t}</Tool>)}
     </Tools>
+    </>
   )
 }

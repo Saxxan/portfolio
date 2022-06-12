@@ -13,9 +13,6 @@ const DesignProjectCardWrapper = styled.article`
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
-    & h3, & p {
-      color: transparent;
-    }
     &:hover div {
       filter: grayscale(50%) blur(2px);
     }
@@ -26,6 +23,10 @@ const DesignProjectCardWrapper = styled.article`
     @media (min-width: 900px){
         width: 280px;
         height: 420px;
+
+        & h3, & p {
+          color: transparent;
+        }
     }
 `
 
