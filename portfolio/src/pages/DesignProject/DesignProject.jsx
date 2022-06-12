@@ -6,6 +6,7 @@ import TextBox from "../../components/projectContent/TextBox";
 import { useState, useEffect } from "react";
 import ImageProject from "../../components/projectContent/ImageProject";
 import ToolList from "../../components/projectContent/ToolList";
+import TextContainer from "../../components/projectContent/TextContainer";
 
 export default function DesignProject() {
 
@@ -24,10 +25,12 @@ export default function DesignProject() {
     return (
         <SectionPageLight>
             <SectionTitle title={project.title}/>
-            <ImageProject image={project.image}/>
-            <TextBox text={project.brief}/>
-            {project.application && <TextBox text={project.application}/> }
-            <ToolList tools={project.tools}/>
+            <ImageProject class='des' image={project.image}/>
+            <TextContainer>
+                <TextBox text={project.brief}/>
+                {project.application && <TextBox text={project.application}/> }
+                <ToolList tools={project.tools}/>
+            </TextContainer>
         </SectionPageLight>
     );
 }

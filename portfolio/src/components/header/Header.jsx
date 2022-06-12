@@ -32,15 +32,12 @@ export default function PageHeader() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleModalVisibility = () => {
-        console.log(isOpen);
-        debugger;
         setIsOpen(!isOpen);
-        console.log(isOpen);
-        debugger;
     }
 
     useEffect(() => {
         location.pathname.includes('design')||location.pathname.includes('contact') ? setTheme('black') : setTheme('white');
+        setIsOpen(false);
     }, [location.pathname]);
 
     return (

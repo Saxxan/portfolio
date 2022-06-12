@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 const Tools = styled.ul`
   max-width: 90vw;
-  margin: 0 auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 `
 
 const Tool = styled.li`
@@ -23,10 +26,10 @@ export default function ToolList(props) {
 
   return (
     <>
-    <h3 style={{width: "90vw", margin:"0 auto", padding:"10px"}}>Tools</h3>
-    <Tools>
-        {herramientas && herramientas.map((t) => <Tool>{t}</Tool>)}
-    </Tools>
+      <h3 style={{width: "90vw", margin:"10px auto", padding:"10px"}}>Tools</h3>
+      <Tools>
+          {herramientas && herramientas.map((t) => <Tool>{t}</Tool>)}
+      </Tools>
     </>
   )
 }

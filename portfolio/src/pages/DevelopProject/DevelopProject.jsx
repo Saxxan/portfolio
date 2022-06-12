@@ -6,6 +6,7 @@ import DevelopProjects from "../../components/json/devprojects.json";
 import ImageProject from "../../components/projectContent/ImageProject";
 import TextBox from "../../components/projectContent/TextBox";
 import ToolList from "../../components/projectContent/ToolList";
+import TextContainer from "../../components/projectContent/TextContainer";
 
 export default function DevelopProject() {
 
@@ -23,10 +24,12 @@ export default function DevelopProject() {
     return (
         <SectionPageDark>
             <SectionTitle title={project.title}/>
-            <ImageProject image={project.image}/>
-            <TextBox text={project.brief}/>
-            {project.application && <TextBox text={project.application}/> }
-            <ToolList tools={project.tools}/>
+            <ImageProject class='dev' image={project.image}/>
+            <TextContainer>
+                <TextBox text={project.brief}/>
+                {project.methology && <TextBox text={project.methology}/> }
+                <ToolList tools={project.tools}/>
+            </TextContainer>
         </SectionPageDark>
     );
 }

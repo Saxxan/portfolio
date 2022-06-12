@@ -3,24 +3,27 @@
         "id": "20",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "brief":"Project brief"
+        "brief":"About me page made with Semanthic HTML and responsive CSS. One page style with horizontal scroll through animation.",
+        "image": "/godog-svg.svg",
+        "methology": "One page with sections as slides. Navigation between sections through a navigation menu which activates an animation which translates the scenario in the X axis",
+        "tools": ["HTML", "SASS"]
     },
     {
         "id": "21",
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "brief":"Project brief"
+        "title":"GoDog",
+        "subtitle":"Made with HTML, SASS and JavaScript",
+        "brief":"Project brief",
+        "image": "",
+        "methology": "",
+        "tools": ["HTML", "SASS", "JavaScript"]
     },
     {
         "id": "22",
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "brief":"Project brief"
-    },
-    {
-        "id": "23",
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "brief":"Project brief"
+        "title":"Portfolio",
+        "subtitle":"Made with HTML, CSS and React",
+        "brief":"Project brief",
+        "image": "",
+        "methology": "",
+        "tools": ["HTML", "CSS", "React", "Styled Components", "SwiperJS"]
     }
 ]
