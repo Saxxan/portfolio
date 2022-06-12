@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Text = styled.p`
     font-size: 15px;
-    width: 50vw;
+    width: 90vw;
+    margin: 0 auto;
     padding: 10px;
     @media (min-width: 900px) {
         font-size: 20px;

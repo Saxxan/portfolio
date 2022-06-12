@@ -5,6 +5,7 @@ import SectionTitle from "../../components/sectionTitle/SectionTitle";
 import TextBox from "../../components/projectContent/TextBox";
 import { useState, useEffect } from "react";
 import ImageProject from "../../components/projectContent/ImageProject";
+import ToolList from "../../components/projectContent/ToolList";
 
 export default function DesignProject() {
 
@@ -16,7 +17,6 @@ export default function DesignProject() {
         DesignProjects.forEach((p) =>{
             if(location.pathname.includes(p.id)){
                 setProject(p);
-                console.log(project);
             }
         });
     }, [project, location]);
@@ -25,7 +25,9 @@ export default function DesignProject() {
         <SectionPageLight>
             <SectionTitle title={project.title}/>
             <ImageProject image={project.image}/>
+            <TextBox text={project.brief}/>
             {project.application && <TextBox text={project.application}/> }
+            <ToolList tools={project.tools}/>
         </SectionPageLight>
     );
 }

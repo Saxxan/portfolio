@@ -13,11 +13,15 @@ const DesignProjectCardWrapper = styled.article`
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
+    & h3, & p {
+      color: transparent;
+    }
     &:hover div {
-      filter: grayscale(100%) blur(3px);
+      filter: grayscale(50%) blur(2px);
     }
     &:hover h3, &:hover p {
       background: var(--primary);
+      color: var(--font-white);
     }
     @media (min-width: 900px){
         width: 280px;
