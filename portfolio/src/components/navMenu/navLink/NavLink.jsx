@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { HeaderThemeContext } from "../../header/Header";
 import PagePointer from "./pagePointer/PagePointer";
 import styled from "styled-components";
@@ -22,12 +22,14 @@ export default function NavLink(props) {
 
     let theme = useContext(HeaderThemeContext);
 
-    let isNavMenu = props.menuClass === 'navMenu' ? true : false;
-
+    let isNavDeskopt = props.menuClass === 'isNavDeskopt' ? true : false;
+    let isNavMobile = props.menuClass === 'mobileNavMenu' ? true : false;
+    
     return (
         <NavMenuOpt>
-            <NavMenuOptLink style={isNavMenu ? {color: theme} : {color: 'white'}} to={props.path}>{props.name}</NavMenuOptLink>
-            {isNavMenu && (props.path === location.pathname && <PagePointer />)}
+            {isNavMobile && <NavMenuOptLink style={props.path === location.pathname ? {color: "rgba(0, 102, 255)"} : {color: 'white'}} to={props.path}>{props.name}</NavMenuOptLink>}
+            {isNavDeskopt && <NavMenuOptLink style={isNavDeskopt ? {color: theme} : {color: 'white'}} to={props.path}>{props.name}</NavMenuOptLink>}
+            {isNavDeskopt && (props.path === location.pathname && <PagePointer />)}
         </NavMenuOpt>
     );
 }

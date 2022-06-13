@@ -33,15 +33,15 @@ export default function ProjectsSwiper(props) {
         if (props.category === "develop") {
             return DevProjects.map(p =>
                 <SwiperSlide style={{width: 'fit-content'}}>
-                    <LinkToProjects style={{color:"white"}} to={`/detailed-develop-project/${p.title}`}>
+                    <LinkToProjects style={{color:"white"}} to={`/detailed-develop-project/${p.id}`}>
                         <DevProjectCard title={p.title} subtitle={p.subtitle}/>
                     </LinkToProjects>
                 </SwiperSlide>)
         } else {
             return DesignProjects.map(p =>
                 <SwiperSlide style={{width: 'fit-content'}}>
-                    <LinkToProjects style={{color:"black"}} to={`/detailed-design-project/${p.title}`}>
-                        <DesignProjectCard title={p.title} subtitle={p.subtitle} image={p.image}/>
+                    <LinkToProjects style={{color:"black"}} to={`/detailed-design-project/${p.id}`}>
+                        <DesignProjectCard title={p.title} subtitle={p.subtitle} thumbnail={p.thumbnail}/>
                     </LinkToProjects>
                 </SwiperSlide>)
         }

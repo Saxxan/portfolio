@@ -35,7 +35,7 @@ export function NavMenuMobile(props) {
 export function NavMenuDeskopt(props) {
     return (
         <MenuDeskopt>
-            {menuOpts.map(opt => <NavLink menuClass='navMenu' name={opt.name} path={opt.path}/>)}
+            {menuOpts.map(opt => <NavLink menuClass='isNavDeskopt' name={opt.name} path={opt.path}/>)}
         </MenuDeskopt>
     );
 }

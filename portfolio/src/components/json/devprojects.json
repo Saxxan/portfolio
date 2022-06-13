@@ -1,22 +1,35 @@
 [
     {
+        "id": "20",
         "title":"About me",
         "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "brief":"About me page made with Semanthic HTML and responsive CSS using SASS. Designed first in Figma. One page style with horizontal scroll through animation.",
+        "image": "",
+        "methology": "One page with sections as slides. Navigation between sections through a top menu which activates an animation translating the scenario in the X axis.",
+        "tools": ["HTML", "SASS"],
+        "link": "https://saxxan.github.io/aboutMe/",
+        "git": "https://github.com/Saxxan/aboutMe"
     },
     {
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "id": "21",
+        "title":"GoDog",
+        "subtitle":"Made with HTML, SASS and JavaScript",
+        "brief":"In this project, I created a contact website between dog owners and dog keepers using HTML, SASS and JavaScript. The objective of this page is to make contact between them easier, having more options to search or offer a service.",
+        "image": "/godog-svg.svg",
+        "methology": "The project is formed by different pages in HTML. The style is structured in a SASS directory. The main core in this project is the search filter made with JavaScript. The code take the input values of the search filter form and compares them with the users data. The users with the same values will appear under the form.",
+        "tools": ["HTML", "SASS", "JavaScript"],
+        "link": "https://saxxan.github.io/GoDog/",
+        "git": "https://github.com/Saxxan/GoDog"
     },
     {
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
-    },
-    {
-        "title":"About me",
-        "subtitle":"Made with HTML and CSS",
-        "description":"Project description"
+        "id": "22",
+        "title":"Portfolio",
+        "subtitle":"Made with HTML, CSS and React",
+        "brief":"This project represents the professional portfolio as a UX/UI Designer and a Front-end Developer. The project also shows my skills after a year of learning.",
+        "image": "",
+        "methology": "The portfolio is created with React and styled components library mainly. It is formed by a Header and a main container which content will change depending on the page.",
+        "tools": ["HTML", "CSS", "React", "Styled Components", "SwiperJS"],
+        "link": "https://saxxan.github.io/portfolio/",
+        "git": "https://github.com/Saxxan/portfolio"
     }
 ]
