@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { HeaderThemeContext } from "../../header/Header";
 import PagePointer from "./pagePointer/PagePointer";
 import styled from "styled-components";

@@ -10,10 +10,17 @@ const ContactFormWrapper = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 900px) {
+        width: 50vw;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 40px;
+    }
 `
 
 const TextAreaForm = styled.textarea`
     width: 100%;
+    max-width: 600px;
     padding: 5px;
     margin: 10px 0;
     height: 80px;
@@ -26,7 +33,6 @@ const TextAreaForm = styled.textarea`
         border: 1px solid var(--primary);
     }
     @media (min-width: 900px) {
-        width: 80%;
         padding: 10px;
         height: 100px;
         font-size: 20px;
