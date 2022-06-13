@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import ImageProject from "../../components/projectContent/ImageProject";
 import ToolList from "../../components/projectContent/ToolList";
 import TextContainer from "../../components/projectContent/TextContainer";
+import ProjectLink from "../../components/projectContent/ProjectLink";
 
 export default function DesignProject() {
 
@@ -25,12 +26,13 @@ export default function DesignProject() {
     return (
         <SectionPageLight>
             <SectionTitle title={project.title}/>
-            <ImageProject class='des' image={project.image}/>
+            <ImageProject class='des' image={project.image} video={project.video}/>
             <TextContainer>
                 <TextBox text={project.brief}/>
                 {project.application && <TextBox text={project.application}/> }
                 <ToolList tools={project.tools}/>
             </TextContainer>
+            {project.link && <ProjectLink link={project.link} text="Visit the page"/>}
         </SectionPageLight>
     );
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactPlayer from 'react-player';
 
-const ImageDes = styled.img`
-  width: 90vw;
+const ImageDes = styled(ReactPlayer)`
   display: block;
   margin: 10px auto;
 `
@@ -17,7 +17,7 @@ const ImageDev = styled.img`
     width: 350px;
     height: 350px;
     padding: 75px;
-    margin: 10px;
+    margin: 10px; 
     float: left;
   }
   @media (min-width: 1200px) {
@@ -29,5 +29,5 @@ const ImageDev = styled.img`
 `
 
 export default function ImageProject(props) {
-  return props.class === 'des' ? <ImageDes src={props.image}/> : <ImageDev src={props.image}/>
+  return props.class === 'des' ? <ImageDes width="90vw" height="50vw" controls={true} url={props.video}/>  : <ImageDev src={props.image}/>
 }
