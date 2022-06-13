@@ -10,14 +10,14 @@
     left: 0;
     z-index: 50;
     height: 5px;
-    width: 200px;
+    width: 80%;
     margin-left: -20px;
     transform: translateY(50px);
 }
 
 .swiper-scrollbar-drag {
     height: 100%;
-    width: 25% !important;
+    width: 33% !important;
     position: relative;
     background: var(--primary);
     border: .5 solid transparent;
@@ -26,20 +26,10 @@
 
 @media (min-width: 900px) {
     .swiper-horizontal>.swiper-scrollbar {
-        width: 400px;
         margin-left: -100px;
     }
     .swiper-scrollbar-drag{
-        width: 35% !important;
-    }
-}
-
-@media (min-width: 1250px) {
-    .swiper-horizontal>.swiper-scrollbar {
-        width: 500px;
-    }
-    .swiper-scrollbar-drag{
-        width: 60% !important;
+        width: 70% !important;
     }
 }
 

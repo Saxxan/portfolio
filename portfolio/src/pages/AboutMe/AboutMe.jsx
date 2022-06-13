@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CTA from '../../components/CTA/CTA';
 import 'swiper/css';
+import {Pagination} from 'swiper';
+import 'swiper/css/pagination';
 import './aboutMe.css';
 import styled from 'styled-components';
 
@@ -13,7 +15,7 @@ const AboutPageLayout = styled.article`
 export default function AboutMe() {
     return (
         <AboutPageLayout>
-            <Swiper slidesPerView={1}>
+            <Swiper slidesPerView={1} modules={[Pagination]} pagination={{boolean:true, clickable:true}}>
                 <SwiperSlide className='aboutSlide about__home'>
                     <section className='about__home__section'>
                         <h1 className='about__home__section__title'>SALVADOR PUCHE IBÁÑEZ</h1>
@@ -24,7 +26,7 @@ export default function AboutMe() {
                         </section>
                     </section>
                     <section className='about__home__section'>
-                        <img src='/landing-page.webp' alt='Landing page image' />
+                        <img src='/landing-page.webp' alt='Landing page' />
                     </section>
                 </SwiperSlide>
                 <SwiperSlide className='aboutSlide about__about'>

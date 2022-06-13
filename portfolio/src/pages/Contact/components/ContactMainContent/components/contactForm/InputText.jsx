@@ -5,6 +5,7 @@ const InputForm = styled.input`
     padding: 5px;
     margin: 10px 0;
     width: 100%;
+    max-width: 600px;
     height: 30px;
     font-size: 15px;
     border-radius: 5px;
@@ -16,7 +17,6 @@ const InputForm = styled.input`
     }
     @media (min-width: 900px) {
         padding: 10px;
-        width: 80%;
         height: 50px;
         font-size: 20px;
     }

@@ -48,7 +48,7 @@ export default function ProjectsSwiper(props) {
     }
 
     return (
-        <SwiperForProjects slidesPerView={'auto'} spaceBetween={20} modules={[Scrollbar]} scrollbar={{draggable:true, dragSize:'auto'}}>
+        <SwiperForProjects slidesPerView={'auto'} spaceBetween={20} modules={[Scrollbar]} scrollbar={{draggable:true}}>
             {printProjects()}
         </SwiperForProjects>
     )

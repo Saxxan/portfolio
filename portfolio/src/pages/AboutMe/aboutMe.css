@@ -124,9 +124,9 @@
     }
 
     .about__home__section > img {
-        height: 500px;
-        width: 450px;
-        margin-left: -110px;
+        height: 600px;
+        width: 550px;
+        margin-left: -150px;
         z-index: -1;
     }
 

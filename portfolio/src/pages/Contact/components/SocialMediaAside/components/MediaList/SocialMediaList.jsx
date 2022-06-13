@@ -10,9 +10,11 @@ const MediaList = styled.ul`
     margin: 0 0 5px 0;
 `
 
-const MediaListItem = styled.li`
+const MediaListItem = styled.a`
     display:flex;
     align-items: center;
+    color: var(--font-black);
+    text-decoration: none;
     gap: 5px;
     padding: 0;
     margin: 0;
@@ -41,23 +43,23 @@ const ItemLabel = styled.span`
 export default function SocialMediaList() {
   return (
     <MediaList>
-        <MediaListItem>
+        <MediaListItem href="https://github.com/Saxxan">
             <GithubIcon/>
             <ItemLabel>Github</ItemLabel>
         </MediaListItem>
-        <MediaListItem>
+        <MediaListItem href="https://www.instagram.com/salvapibez/">
             <InstagramIcon/>
             <ItemLabel>Instagram</ItemLabel>
         </MediaListItem>
-        <MediaListItem>
+        <MediaListItem href="https://twitter.com/salvaPIbez">
             <TwitterIcon/>
             <ItemLabel>Twitter</ItemLabel>
         </MediaListItem>
-        <MediaListItem>
+        <MediaListItem href="https://www.linkedin.com/in/salvador-puche-ib%C3%A1%C3%B1ez/">
             <LinkedinIcon/>
             <ItemLabel>Linkedin</ItemLabel>
         </MediaListItem>
-        <MediaListItem>
+        <MediaListItem href="https://codepen.io/saxxan">
             <CodepenIcon/>
             <ItemLabel>Codepen</ItemLabel>
         </MediaListItem>
