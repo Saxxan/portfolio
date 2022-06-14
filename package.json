@@ -16,7 +16,7 @@
     "swiper": "^8.1.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://frontend.esatid3-2021.com/salva-portfolio/index.html",
+  "homepage": "https://frontend.esatid3-2021.com/salva-portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
