@@ -6,8 +6,11 @@ const Tools = styled.ul`
   max-width: 90vw;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
 `
 
 const Tool = styled.li`
