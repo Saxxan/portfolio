@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --font-title: 'Space Grotesk', sans-serif;
+  --font-text: 'Montserrat', sans-serif;
+
+  /* Colors */
+  --bg-dark-1: linear-gradient(90deg, #111111 -22.34%, #2F2F2F 100%);
+  --bg-dark-2: linear-gradient(270deg, #111111 -12.81%, #2F2F2F 103.91%);
+  --bg-ligth: #F6F6F6;
+  --font-white: white;
+  --font-black: black;
+  --primary: rgba(0, 102, 255);
+  --primary-hover: rgba(0, 102, 255, 0.5);
+  --border-gradient: linear-gradient(135deg, rgba(0, 102, 255), rgba(0, 102, 255, .1));
+  --font-grey: #7E7E7E;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-title);
+}
+
+p, span, input, textarea, li, a {
+  margin: 0;
+  font-family: var(--font-text);
+}
