@@ -16,6 +16,7 @@
     "swiper": "^8.1.4",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://saxxan.github.io/portfolio/public/index.html",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
