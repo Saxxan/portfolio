@@ -1,33 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import ReactPlayer from 'react-player';
 
-const ImageDes = styled(ReactPlayer)`
+const ImageBig = styled.img`
   display: block;
-  margin: 10px auto;
+  width: 70vw;
+  margin: 40px auto;
 `
 
-const ImageDev = styled.img`
-  width: 300px;
-  height: 300px;
-  padding: 50px;
+const ImageSmall = styled.img`
+  width: ${props => props.ancho};
   display: block;
-  margin: 10px auto;
+  margin: 30px auto;
   @media (min-width: 900px) {
-    width: 350px;
-    height: 350px;
-    padding: 75px;
-    margin: 10px; 
-    float: left;
+    margin: 30px; 
   }
   @media (min-width: 1200px) {
-    width: 400px;
-    height: 400px;
-    padding: 100px;
-    margin: 10px 0 10px 175px;
+    margin: 10px;
   }
 `
 
 export default function ImageProject(props) {
-  return props.class === 'des' ? <ImageDes width="90vw" height="50vw" controls={true} url={props.video}/>  : <ImageDev src={props.image}/>
+  return props.class === 'big' ? <ImageBig src={props.image}/>  : <ImageSmall ancho={props.ancho} src={props.image}/>
 }

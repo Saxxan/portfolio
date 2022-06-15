@@ -26,12 +26,13 @@ export default function DesignProject() {
     return (
         <SectionPageLight>
             <SectionTitle title={project.title}/>
-            <ImageProject class='des' image={project.image} video={project.video}/>
+            <ImageProject class='big' image={project.image1}/>
             <TextContainer>
-                <TextBox text={project.brief}/>
-                {project.application && <TextBox text={project.application}/> }
-                <ToolList tools={project.tools}/>
+                <TextBox wide="70vw" text={project.brief}/>
+                {project.image2 && <ImageProject class='big' image={project.image2}/>}
+                {project.application && <TextBox wide="70vw" text={project.application}/> }
             </TextContainer>
+            <ToolList tools={project.tools}/>
             {project.link && <ProjectLink link={project.link} text="Visit the page"/>}
         </SectionPageLight>
     );

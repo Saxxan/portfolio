@@ -5,7 +5,7 @@
         "subtitle":"Made with Figma",
         "brief":"This is a design of BB8 made in Figma. Made by a simple sketch and creating components.",
         "thumbnail":"/bb8-thumbnail.png",
-        "video":"/bb8-video.mp4",
+        "image1":"/bb8-video.mp4",
         "application": "",
         "tools":["Figma"]
     },
@@ -15,7 +15,7 @@
         "subtitle":"Designed in Figma",
         "brief":"Designed an About me page as personal presentation. The responsive design is made in Figma. Using autolayout and components as the customed iconography. A project made to get experience with Figma. Dark colors and minimalist trend.",
         "thumbnail":"/aboutme-thumbnail.webp",
-        "video":"/aboutme-video.mp4",
+        "image1":"/about-landing-mockup.webp",
         "application": "This page used to be use as a personal presentation letter. To know more about me and show my skills at the very beginning.",
         "tools":["Figma"],
         "link": "https://saxxan.github.io/aboutMe/"
@@ -26,7 +26,8 @@
         "subtitle":"Designed in Figma",
         "brief":"In this project, I created a contact website between dog owners and dog keepers. The objective of this page is to make contact between them easier, having more options to search or offer a service. The design is focused on the logic of the content structure and the two types of users.",
         "thumbnail":"/godog-thumbnail.webp",
-        "video":"/godog-video.mp4",
+        "image1":"/godog-landing-mockup.webp",
+        "image2":"/godog-search-mockup.png",
         "application": "This application is focused in two types of users, dog owners and dog keepers. The page is used to found someone that would made a service you need or to offer yourself as a dog keeper in order to make some money.",
         "tools":["Figma"],
         "link": "https://saxxan.github.io/GoDog/"

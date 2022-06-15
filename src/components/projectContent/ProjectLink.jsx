@@ -13,6 +13,7 @@ const LinkToProject = styled.a`
     }
     @media (min-width: 900px) {
         font-size: 18px;
+        width: 70vw;
     }
 `
 
