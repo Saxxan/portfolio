@@ -68,17 +68,18 @@
 }
 
 .about__skills__block {
-    width: 200px;
+    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
 .about__skills__block > h3 {
-    border-bottom: 1px solid var(--font-white);
     padding-bottom: 3px;
+    width: 150px;
+    text-decoration:underline;
 }
 
 .about__skills__block > ul {
@@ -88,8 +89,7 @@
 }
 
 .about__skills__block > ul > li {
-    width: 100%;
-    text-align: center;
+    width: 150px;
 }
 
 @media (min-width: 900px) {
@@ -139,17 +139,20 @@
 
     .about__skills {
         flex-direction: row;
+        gap: 50px;
     }
 
     .about__skills__block {
-        width: 300px;
+        width: 200px;
     }
 
     .about__skills__block > h3 {
         font-size: 25px;
+        width: 200px;
     }
 
     .about__skills__block > ul > li {
         font-size: 20px;
+
     }
 }
