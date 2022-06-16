@@ -5,7 +5,7 @@
         "subtitle":"Made with Figma",
         "brief":"This is a design of BB8 made in Figma. Made by a simple sketch and creating components.",
         "thumbnail":"./bb8-thumbnail.png",
-        "image1":"./bb8-video.mp4",
+        "image1":"",
         "application": "",
         "tools":["Figma"]
     },
