@@ -8,6 +8,7 @@ import ImageProject from "../../components/projectContent/ImageProject";
 import ToolList from "../../components/projectContent/ToolList";
 import TextContainer from "../../components/projectContent/TextContainer";
 import ProjectLink from "../../components/projectContent/ProjectLink";
+import element from "../../../package.json";
 
 export default function DesignProject() {
 
@@ -26,10 +27,10 @@ export default function DesignProject() {
     return (
         <SectionPageLight>
             <SectionTitle title={project.title}/>
-            <ImageProject class='big' image={project.image1}/>
+            <ImageProject class='big' image={element.homepage + project.image1}/>
             <TextContainer>
                 <TextBox wide="70vw" text={project.brief}/>
-                {project.image2 && <ImageProject class='big' image={project.image2}/>}
+                {project.image2 && <ImageProject class='big' image={element.homepage + project.image2}/>}
                 {project.application && <TextBox wide="70vw" text={project.application}/> }
             </TextContainer>
             <ToolList tools={project.tools}/>

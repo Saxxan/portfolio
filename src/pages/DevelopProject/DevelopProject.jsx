@@ -8,6 +8,7 @@ import TextBox from "../../components/projectContent/TextBox";
 import ToolList from "../../components/projectContent/ToolList";
 import TextContainer from "../../components/projectContent/TextContainer";
 import ProjectLink from "../../components/projectContent/ProjectLink";
+import element from "../../../package.json";
 
 export default function DevelopProject() {
 
@@ -27,20 +28,20 @@ export default function DevelopProject() {
             <SectionTitle title={project.title}/>
             <TextContainer>
                 <TextBox text={project.brief}/>
-                {project.image1 && <ImageProject class='small' ancho="250px" image={project.image1}/>}
+                {project.image1 && <ImageProject class='small' ancho="250px" image={element.homepage + project.image1}/>}
             </TextContainer>
             <TextContainer>
-                {project.imageBig && <ImageProject class='big' image={project.imageBig}/>}
-                {project.image2 && <ImageProject class='small' image={project.image2}/>}
+                {project.imageBig && <ImageProject class='big' image={element.homepage + project.imageBig}/>}
+                {project.image2 && <ImageProject class='small' image={element.homepage + project.image2}/>}
                 {project.methology && <TextBox text={project.methology}/> }
                 {project.text2 && <TextBox wide="70vw" text={project.text2}/> }
             </TextContainer>
             {project.text1 && <TextContainer>
                 <TextBox text={project.text1}/>
-                {project.image3 && <ImageProject class='small' ancho="250px" image={project.image3}/>}
+                {project.image3 && <ImageProject class='small' ancho="250px" image={element.homepage + project.image3}/>}
             </TextContainer>}
             {project.image4 && <TextContainer>
-                <ImageProject class='big' ancho="250px" image={project.image4}/>
+                <ImageProject class='big' ancho="250px" image={element.homepage + project.image4}/>
             </TextContainer>}
             <ToolList tools={project.tools}/>
             <ProjectLink link={project.link} text="Visit the page"/>
