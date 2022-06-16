@@ -83,7 +83,7 @@
 }
 
 .about__skills__block > ul {
-    padding: 0;
+    padding-left: 10px;
     list-style: none;
     width: 100%;
 }
