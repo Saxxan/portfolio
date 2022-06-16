@@ -26,7 +26,7 @@ export default function AboutMe() {
                         </section>
                     </section>
                     <section className='about__home__section'>
-                        <img src='/landing-page.webp' alt='Landing page' />
+                        <img src='./landing-page.webp' alt='Landing page' />
                     </section>
                 </SwiperSlide>
                 <SwiperSlide className='aboutSlide about__about'>
